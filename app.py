@@ -25,7 +25,7 @@ st.markdown("""
         }
         .sub-header {
             font-size: 18px;
-            color: #333;
+            color: red;
             text-align: center;
         }
         .highlight {
