@@ -10,72 +10,45 @@ df = pd.read_csv(r"./diabetes.csv")
 
 # Add custom CSS for styling
 st.markdown("""
-    <style>
-        :root {
-            --primary-color: #ff5e5e;
-            --secondary-color: #ffaa00;
-            --background-color: #f9f9f9;
-            --text-color: #333;
-            --hover-color: #ff4040;
-            --success-color: #28a745;
-            --danger-color: #dc3545;
-        }
-        body {
-            background-color: var(--background-color);
-        }
-        .header {
-            font-size: 36px;
-            font-family: 'Arial Black', sans-serif;
-            text-align: center;
-            color: var(--primary-color);
-        }
-        .sub-header {
-            font-size: 16px;
-            color: var(--text-color);
-            text-align: center;
-            color: white;
-        }
-        .highlight {
-            font-size: 18px;
-            color: var(--primary-color);
-            font-weight: bold;
-            text-align: center;
-        }
-        .card {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-            padding: 10px;
-            margin: 10px auto;
-            width: 90%;
-            max-width: 400px;
-        }
-        .button {
-            background-color: var(--primary-color);
-            color: white;
-            font-size: 16px;
-            padding: 8px 16px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            text-align: center;
-        }
-        .button:hover {
-            background-color: var(--hover-color);
-        }
-        .success {
-            color: var(--success-color);
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
-        }
-        .danger {
-            color: var(--danger-color);
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
-        }
-    </style>
+<style>
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0069d9;   
+
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+</style>
 """, unsafe_allow_html=True)
 
 
