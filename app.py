@@ -33,6 +33,7 @@ st.markdown("""
             font-size: 16px;
             color: var(--text-color);
             text-align: center;
+            color: white;
         }
         .highlight {
             font-size: 18px;
