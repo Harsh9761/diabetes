@@ -104,12 +104,13 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Button for prediction
+import time
 if st.button('🔮 Check My Risk', key="primary", help="Click to predict diabetes risk"):
     st.markdown("<h3 style='text-align: center;'>🔄 Analyzing your data...</h3>", unsafe_allow_html=True)
-    
     progress = st.progress(0)
-    for percent in range(100):
-        progress.progress(percent + 1)
+    for percent in range(0, 101, 10):
+        time.sleep(0.1)
+        progress.progress(percent)
     
     prediction = rf.predict(user_data)
     
