@@ -65,7 +65,11 @@ user_data = get_user_input()
 
 # Data Summary with new styling
 st.markdown("<h2 style='color: #ff6b6b;'>Health Data Overview</h2>", unsafe_allow_html=True)
-st.dataframe(user_data.style.set_properties({'background-color': '#f5f5f5', 'color': '#333', 'border-color': '#ff5e5e'}))
+# st.dataframe(user_data.style.set_properties({'background-color': '#f5f5f5', 'color': '#333', 'border-color': '#ff5e5e'}))
+styled_df = user_data.style.set_properties(
+    **{'background-color': '#f5f5f5', 'color': '#333', 'border-color': '#ff5e5e'}
+)
+st.write(styled_df)
 
 # Split the data
 x = df.drop(['Outcome'], axis=1)
