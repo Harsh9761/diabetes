@@ -45,7 +45,7 @@ st.markdown("""
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-            padding: 15px;
+            padding: 10px;
             margin: 10px auto;
             width: 90%;
             max-width: 400px;
@@ -82,7 +82,7 @@ st.markdown("""
 
 
 # Header
-st.markdown("<h1 class='header'>✨ Diabetes Risk Checker ✨</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='header'> Diabetes Risk Checker </h1>", unsafe_allow_html=True)
 st.markdown("<p class='sub-header'>Analyze your health data to understand your diabetes risk.</p>", unsafe_allow_html=True)
 st.markdown("<hr>", unsafe_allow_html=True)
 
