@@ -11,60 +11,72 @@ df = pd.read_csv(r"./diabetes.csv")
 # Add custom CSS for styling
 st.markdown("""
     <style>
+        :root {
+            --primary-color: #ff5e5e;
+            --secondary-color: #ffaa00;
+            --background-color: #f9f9f9;
+            --text-color: #333;
+            --hover-color: #ff4040;
+            --success-color: #28a745;
+            --danger-color: #dc3545;
+        }
         body {
-            background-color: #f9f9f9;
+            background-color: var(--background-color);
         }
         .header {
-            font-size: 50px;
+            font-size: 36px;
             font-family: 'Arial Black', sans-serif;
             text-align: center;
-            background: linear-gradient(to right, #ff5e5e, #ffaa00);
-            -webkit-background-clip: text;
-            color: red;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            color: var(--primary-color);
         }
         .sub-header {
-            font-size: 18px;
-            color: red;
+            font-size: 16px;
+            color: var(--text-color);
             text-align: center;
         }
         .highlight {
-            font-size: 20px;
-            color: #ff4b4b;
+            font-size: 18px;
+            color: var(--primary-color);
             font-weight: bold;
             text-align: center;
         }
         .card {
             background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin: 10px auto;
+            width: 90%;
+            max-width: 400px;
         }
         .button {
-            background-color: #ff5e5e;
+            background-color: var(--primary-color);
             color: white;
-            font-size: 18px;
-            padding: 10px 20px;
+            font-size: 16px;
+            padding: 8px 16px;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
         }
         .button:hover {
-            background-color: #ff4040;
-            color: white;
+            background-color: var(--hover-color);
         }
         .success {
-            color: #28a745;
-            font-size: 24px;
+            color: var(--success-color);
+            font-size: 18px;
             font-weight: bold;
+            text-align: center;
         }
         .danger {
-            color: #dc3545;
-            font-size: 24px;
+            color: var(--danger-color);
+            font-size: 18px;
             font-weight: bold;
+            text-align: center;
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 
 
