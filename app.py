@@ -65,6 +65,37 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
+# Beautiful heading with gradient, shadow, and stylish font
+st.markdown("""
+    <style>
+        .main-header {
+            font-size: 60px;
+            font-family: 'Arial Black', sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff5e5e, #ffaa00, #00c9ff);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+        .sub-header {
+            font-size: 20px;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #333333;
+            margin-bottom: 30px;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #ffaa00, #ff5e5e);
+        }
+    </style>
+    <h1 class="main-header">🌟 Diabetes Risk Checker 🌟</h1>
+    <p class="sub-header">Analyze your health data and uncover potential risks in just seconds!</p>
+    <hr>
+""", unsafe_allow_html=True)
+
 
 # Header
 st.markdown("<h1 class='header'>✨ Diabetes Risk Checker ✨</h1>", unsafe_allow_html=True)
